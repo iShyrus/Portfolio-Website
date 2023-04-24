@@ -1,0 +1,205 @@
+body {
+    background:#1d1d1d;
+    overflow-x: hidden;
+    font-family: "Open Sans";
+
+}
+
+
+#topBox1{
+    background-color:#c4c4c4;
+    background-image:linear-gradient(to right, #e7464d, #cd4877, #a055a3, #5f44da );
+    width:975px;
+    height:100px;
+    position:relative;
+    margin-left:23.5%;
+    margin-top:-20px;
+    border-radius:12px;
+}
+#topBox2{
+    background-color:white;
+    width:964px;
+    height:90px;
+    position:absolute;
+    border-radius:12px;
+    margin-left:0.5%;
+    top:5px;
+
+}
+
+
+#topBox3{
+    background-color:white;
+    width:100px;
+    height:100px;
+    position:absolute;
+    border-radius:12px;
+    margin-left:45%;
+    top:35px;
+    transform:rotate(45deg)
+    
+
+}
+
+.topText{
+    background-color:white;
+    font-family: "Open Sans";
+    cursor: pointer;
+    border:none;
+    font-weight: bold;
+    font-size:28px;
+    color:#898989;
+    margin-top:27px;
+
+}
+
+#homeButton{
+    margin-left:16.5%;
+
+}
+
+
+
+#projectButton{
+    margin-left:42%;
+}
+
+#pictureBox1{
+    
+    background-color:#c4c4c4;
+    width:725px;
+    height:725px;
+    margin-left:59%;
+    margin-top:5%;
+    border-radius: 2px;
+    background-image:linear-gradient(to right, #e7464d, #cd4877, #a055a3, #5f44da );
+}
+
+#pictureBox2{
+    position:relative;
+    background-color:white;
+    width:715px;
+    height:715px;
+    margin-left:0.6%;
+    top:4px;
+    border-radius: 2px;
+}
+
+#helloText{
+    font-family: "Open Sans";
+    width:12000px;
+    font-size: 2.3vw;
+
+    position:absolute;
+    top:80px;
+    margin-left:3.5%;
+}
+
+#helloText1{
+    background-image:linear-gradient(to right, #e7464d, #cd4877, #a055a3, #5f44da );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+
+}
+
+#helloText2{
+    color:#f1f1f1;
+    top:0px;
+    left:5px;
+    position:absolute;
+
+
+}
+
+#name{
+    background: linear-gradient(to right, #e7464d, #cd4877, #a055a3, #5f44da, #7AD7F0,#e7464d );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientTextAnimation 3s ease-in-out infinite;
+}
+
+#iAm{
+}
+
+#paragraph{
+    font-family: "Open Sans";
+    color:#e4e4e4;
+    top:15px;
+
+}
+#projectsTitle{
+    position:relative;
+    text-align:center;
+    font-size: 2.5vw;
+    top:40px;
+    color:#f1f1f1;
+}
+
+#procject1Box{
+    background-color: white;
+    margin-left:100px;
+}
+
+#procject2Box{
+    position:relative;
+    background-color: white;
+    margin-left:1010px;
+    top:-422px;
+}
+#procject3Box{
+    position:relative;
+    background-color: white;
+    margin-left:100px;
+    top:-422px;
+}
+
+#procject4Box{
+    position:relative;
+    background-color: white;
+    margin-left:1010px;
+    top:-844px;
+}
+
+#projectList{
+    position:relative;
+    top:30px;
+}
+.pBox{
+    border-radius:10px;
+    width:810px;
+    height:400px;
+}
+@keyframes fadein{
+    0% { opacity:0; }
+    75% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes slidein{
+    0% {top:-400px;}
+    100% {top:-5px;}
+
+}
+
+@keyframes gradientTextAnimation {
+    0%{background-position:0 50%;}
+    50%{background-position:200% 50%;}
+    100%{background-position: 0 50%;}
+  }
+
+
+  #columns{
+    color:red;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 4px double #ff00ff;
+  }
+
+  .animate {
+    animation: gradientTextAnimation 3s ease-in-out;
+  }
+  
+
+/* SLIDING THING LIKE THE ONE IN LEAGUE WEBSITE*/

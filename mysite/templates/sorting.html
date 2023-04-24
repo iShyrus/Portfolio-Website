@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" type = "text/css" href="{% static 'projects.css' %}"/>
+    <script src="{% static 'home.js' %}"></script>
+    <script src="{% static 'sortVisualizer.js' %}"></script>
+
+    <head>
+      <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    </head>
+  </head>
+
+  <body>
+    <main>
+
+      <div id = "topBox1">
+        <div id = "topBox3"></div>
+        <div id = "topBox2">
+          <button class = "topText" id="homeButton" onclick="toHomePage()">Home</button>
+          <button class = "topText" id = "projectButton" onclick=toProjectPage()>Projects</button>
+        </div>
+      </div>
+
+
+      <button onclick="sortProcess()"></button>
+      <button onclick="insertionSortAnimaiton()"></button>
+
+      <div id = "pictureBox1" style="background:#1d1d1d;">
+        <div id ="pictureBox2" style="background:#1d1d1d;">
+          <p id ="sortProcess" style = "opacity: 0.0;">{{sortedArrProcess}}</p>
+          <p id ="arrLength"style = "opacity: 0.0;">{{length}}</p>
+          <p id ="changingKeys"style = "opacity: 0.0;">{{changingKeys}}</p>
+          <p id ="indexOfKeys"style = "opacity: 0.0;">{{indexOfKeys}}</p>
+
+        </div>
+      </div>
+
+
+      <div id = "helloText">
+        <h1 id ="helloText1">
+          Hello,
+        </h1>
+        <h1 id ="helloText2">Hello,<br><span id ="iAm">I am</span><span id="name"> Cyrus Arellano.</span></h1>
+        <p id ="paragraph"><br>Blah blah blah blah blah blah blah blah blah <br>blah blah blah blah blah blah blah blah blah <br>blah blah blah blah blah blah blah.</p>
+
+      </div>
+
+
+      <div>
+        <h1 id ="projectsTitle">Projects</h1>
+      </div>
+
+      <div id="projectList">
+        <h1 class = "pBox" id ="procject1Box"></h1>
+        <h1 class = "pBox" id ="procject2Box"></h1>
+        <h1 class = "pBox" id ="procject3Box">
+
+          <p>{{info.test}}</p>
+
+F
+          <form action = "" method = "POST">
+            {% csrf_token %}
+            <input id="numList" type="text" name="numList">
+            <input type="submit" value="OK">
+        </form>
+        </h1>
+        
+        <h1 class = "pBox" id ="procject4Box"></h1>
+
+      </div>
+    </main>
+  </body>
+</html>
